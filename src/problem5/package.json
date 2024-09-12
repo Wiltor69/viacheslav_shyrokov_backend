@@ -1,12 +1,20 @@
 {
   "name": "problem5",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.test",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "cross-env NODE_ENV=production node ./server.ts",
+    "start:dev": "cross-env NODE_ENV=development nodemon ./server.ts",
+   
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  }
 }
